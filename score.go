@@ -55,7 +55,7 @@ func Distance(hash1, hash2 string) (score int, err error) {
 // A match score of zero indicates the signatures did not match.
 // Returns an error when one of the inputs are not valid signatures.
 func Distance2(hash1String1, hash1String2, hash2String1, hash2String2 string, hash1BlockSize, hash2BlockSize int) (score int, err error) {
-	if hash1BlockSize == hash2BlockSize && hash1String1 == hash2String1 {
+	if hash1BlockSize == hash2BlockSize && strings.EqualFold(hash1String1, hash2String1) {
 		return 100, nil
 	}
 
