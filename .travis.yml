@@ -9,4 +9,4 @@ before_install:
   - go get github.com/mattn/goveralls
 
 script:
-  - $GOPATH/bin/goveralls -package "github.com/glaslos/ssdeep"
+  - $GOPATH/bin/goveralls -package "github.com/DanielPels/ssdeep"

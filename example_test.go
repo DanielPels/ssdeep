@@ -1,13 +1,12 @@
 package ssdeep_test
 
 import (
-	"github.com/glaslos/ssdeep"
-	"math/rand"
 	"fmt"
-	"os"
+	"github.com/DanielPels/ssdeep"
 	"log"
+	"math/rand"
+	"os"
 )
-
 
 func ExampleFuzzyFilename() {
 	f, err := os.Open("file.txt")
